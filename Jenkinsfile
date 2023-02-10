@@ -4,13 +4,13 @@ pipeline{
                   //registry2 = "519852036875.dkr.ecr.us-east-2.amazonaws.com/cloudjournee:${env.BUILD_NUMBER}"
                   
                 //}
-    tools {maven "maven"}
+    //tools {maven "maven"}
     
     stages{
         stage('code checkout from GitHub'){
             steps{
                 //check out code from the GitHub
-                git 'https://github.com/Abhilash-1201/SpringBootJSP-Internal.git'
+                git 'https://github.com/Abhilash-1201/SpringBoot-Internal-Project.git'
                 //script {
                //     def props = readProperties file: 'sonar-project.properties'
                //     env.SONAR_HOST_URL = props['sonar.host.url']
