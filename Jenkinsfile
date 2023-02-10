@@ -50,7 +50,7 @@ pipeline{
         
         stage('Build') {
             steps{
-               sh "mvn clean install"
+               sh "mvn clean package"
      	   }
         }
         // Build the docker image to store in to ECR
